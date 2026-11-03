@@ -7,7 +7,10 @@ namespace Task_2.Classes
     internal class Fahrenheit : Measurement
     {
         //Constructor (inherits logic from base class).
-        public Fahrenheit(double p_temperature) : base(p_temperature) { }
+        public Fahrenheit(double p_temperature) : base(p_temperature)
+        {
+            this.unit = "Fahrenheit";
+        }
 
         //Output as celsius.
         public override double as_celsius()

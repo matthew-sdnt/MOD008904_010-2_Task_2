@@ -7,7 +7,10 @@ namespace Task_2.Classes
     internal class Kelvin : Measurement
     {
         //Constructor (inherits logic from base class).
-        public Kelvin(double p_temperature) : base(p_temperature) { }
+        public Kelvin(double p_temperature) : base(p_temperature)
+        {
+            this.unit = "Kelvin";
+        }
 
         //Output as celsius.
         public override double as_celsius()

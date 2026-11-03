@@ -9,6 +9,13 @@ namespace Task_2.Classes
         //Base class.
         //Fields
         protected double temperature; //To store the temperature.
+        protected string unit;
+
+        //Defines the getter for the Unit property (which returns the unit field that is set upon the creation of a derivative object).
+        public string Unit
+        {
+            get { return unit; }
+        }
 
         protected Measurement(double p_temperature)
         {

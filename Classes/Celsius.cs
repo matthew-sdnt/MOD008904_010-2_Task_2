@@ -7,7 +7,10 @@ namespace Task_2.Classes
     internal class Celsius : Measurement
     {
         //Constructor (inherits logic from base class).
-        public Celsius(double p_temperature) : base(p_temperature) { }
+        public Celsius(double p_temperature) : base(p_temperature)
+        {
+            this.unit = "Celsius";
+        }
 
         //Output as celsius (self).
         public override double as_celsius()
