@@ -6,6 +6,9 @@ namespace Task_2
         static void Main(string[] args)
         {
             //MOD008904 010-2 Task_2 - Temperature Converter
+            //Variables
+
+            //Logic
         }
     }
 }
