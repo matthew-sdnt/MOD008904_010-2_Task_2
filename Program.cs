@@ -59,11 +59,11 @@ namespace Task_2
         {
             if (p_start_measurement == p_end_measurement)
             {
-                Console.WriteLine($"Your temperature of {p_start_temp} {p_start_measurement} is already in {p_end_measurement}, thus not needing to be converted.");
+                Console.WriteLine($"Your temperature of {p_start_temp:0.00} {p_start_measurement} is already in {p_end_measurement}, thus not needing to be converted.");
             }
             else
             {
-                Console.WriteLine($"Your temperature of {p_start_temp} {p_start_measurement} translates to {p_end_temp} {p_end_measurement}.");
+                Console.WriteLine($"Your temperature of {p_start_temp:0.00} {p_start_measurement} translates to {p_end_temp} {p_end_measurement}.");
             }
         }
         static void Main(string[] args)
