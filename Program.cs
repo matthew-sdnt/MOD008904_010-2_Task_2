@@ -14,6 +14,7 @@ namespace Task_2
             Console.Write(p_prompt); //Prompt user.
             while (!int.TryParse(Console.ReadLine(), out num)) //Takes input, loops if not a double..
             {
+                Console.Clear();
                 Console.WriteLine("Please input an integer."); //Error.
                 Console.Write(p_prompt); //Reprompt user.
             }
@@ -29,6 +30,7 @@ namespace Task_2
             do
             {
                 num = input_int(p_prompt); //Calls the input_int method defined prior and passes the prompt in.
+                Console.Clear();
             } while (num < p_min || num > p_max); //Check if number is in the given range.
 
             return num;
@@ -42,6 +44,7 @@ namespace Task_2
             Console.Write(p_prompt); //Prompt user.
             while (!double.TryParse(Console.ReadLine(), out num)) //Takes input, loops if not a double..
             {
+                Console.Clear();
                 Console.WriteLine("Please input a decimal number or integer."); //Error.
                 Console.Write(p_prompt); //Reprompt user.
             }
@@ -68,13 +71,13 @@ namespace Task_2
             double temperature_in; //Variable to store the temperature when its inputted.
 
             //Logic
-            convert_from = input_int("\nWhat type of temperature are you trying to convert from?\n1. Celsius\n2. Fahrenheit\n3. Kelvin\nChoice: ", 1, 3);
+            convert_from = input_int("What type of temperature are you trying to convert from?\n1. Celsius\n2. Fahrenheit\n3. Kelvin\nChoice: ", 1, 3);
             Console.Clear();
 
             temperature_in = input_double("Temperature to convert: ");
             Console.Clear();
 
-            convert_to = input_int("\nWhat type of temperature are you trying to convert to?\n1. Celsius\n2. Fahrenheit\n3. Kelvin\nChoice: ", 1, 3);
+            convert_to = input_int("What type of temperature are you trying to convert to?\n1. Celsius\n2. Fahrenheit\n3. Kelvin\nChoice: ", 1, 3);
             Console.Clear();
 
             switch (convert_from) //Check which input the user gave.
