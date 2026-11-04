@@ -63,7 +63,7 @@ namespace Task_2
             }
             else
             {
-                Console.WriteLine($"Your temperature of {p_start_temp:0.00} {p_start_measurement} translates to {p_end_temp} {p_end_measurement}.");
+                Console.WriteLine($"Your temperature of {p_start_temp:0.00} {p_start_measurement} translates to {p_end_temp:0.00} {p_end_measurement}.");
             }
         }
         static void Main(string[] args)
