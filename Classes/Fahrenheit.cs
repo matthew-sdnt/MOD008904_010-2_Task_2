@@ -15,7 +15,7 @@ namespace Task_2.Classes
         //Output as celsius.
         public override double as_celsius()
         {
-            return temperature;
+            return (temperature - 32) / 1.8;
         }
         //Output as kelvin.
         public override double as_kelvin()
@@ -25,7 +25,7 @@ namespace Task_2.Classes
         //Output as fahrenheit (self).
         public override double as_fahrenheit()
         {
-            return (temperature - 32) / 1.8;
+            return temperature;
         }
     }
 }
