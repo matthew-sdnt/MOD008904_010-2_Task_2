@@ -31,7 +31,7 @@ namespace Task_2
 
             return num;
         }
-        static double input_double(string p_prompt) //Method to input doubles.
+        static double input_double(string p_prompt) //Method to input doubles, this exists as a method of abstracting this logic from the main function.
         {
             //Variables
             double num;
