@@ -30,7 +30,11 @@ namespace Task_2
             do
             {
                 num = input_int(p_prompt); //Calls the input_int method defined prior and passes the prompt in.
-                Console.Clear();
+                if (num < p_min || num > p_max)
+                {
+                    Console.Clear();
+                    Console.WriteLine($"Please input a number in the given range ({p_min} - {p_max}).");
+                }
             } while (num < p_min || num > p_max); //Check if number is in the given range.
 
             return num;
